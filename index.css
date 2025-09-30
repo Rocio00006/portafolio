@@ -381,6 +381,7 @@ main {
     /*align-items: center;    /* Centra verticalmente */
     min-height: 100vh;      /* Para asegurar centrado vertical en toda la pantalla */
     margin: 0;
+    background-color: aliceblue;
 }
 .pdf{
     width: 80%; /* Ajusta el ancho según tus necesidades */
@@ -394,3 +395,89 @@ main {
     padding-top: 10px;
     margin-top: 10px;
 }
+.cardchio{
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;    
+}
+
+.containerchio {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+
+}
+.apan{
+    align-self: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+:root{
+--card-bg: linear-gradient(180deg, rgba(29,20,70,0.95), rgba(37,34,78,0.95));
+--accent-1: #7c4dff;
+--accent-2: #3b82f6;
+--muted: #101011;
+--radius: 12px;
+--card-padding: 24px;
+--max-width: 900px;
+--text: #e6eef8;
+}
+
+
+.research-card{
+max-width: var(--max-width);
+margin: 18px auto;
+background-color: #3b82f6;
+background: var(--card-bg);
+color: var(--text);
+border-radius: var(--radius);
+padding: var(--card-padding);
+box-shadow: 0 8px 30px rgba(9,10,31,0.6);
+font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+border: 1px solid rgba(124,77,255,0.12);
+}
+
+
+.research-header{ margin-bottom:10px; }
+.research-title{ font-size:1.6rem; margin:0; color: white; }
+.research-sub{ margin:0; color:var(--muted); font-size:0.95rem; }
+
+
+.block{ padding:12px 0; border-top:1px dashed rgba(255,255,255,0.03); }
+.block:first-of-type{ border-top: none; }
+.block-title{ font-size:1.05rem; margin:0 0 8px 0; color: var(--accent-1); }
+.block-content{ color: var(--muted); line-height:1.5; }
+
+
+.bullet-list, .criteria-list{ margin:8px 0 0 18px; }
+.bullet-list li, .criteria-list li{ margin:8px 0; }
+.question-list{ margin:8px 0 0 18px; }
+.question-list li{ margin:10px 0; }
+
+
+.small{ font-size:0.85rem; color: rgba(230,238,248,0.85); }
+.muted{ color: rgba(230,238,248,0.6); }
+
+
+.hint{ margin-top:10px; padding:10px; background: rgba(59,130,246,0.06); border-left:4px solid rgba(124,77,255,0.18); border-radius:6px; color:var(--muted); }
+
+
+.research-footer{ margin-top:12px; border-top:1px dashed rgba(255,255,255,0.03); padding-top:10px; }
+
+
+@media (max-width:640px){
+.research-card{ padding:16px; border-radius:10px; }
+.research-title{ font-size:1.25rem; }
+}
+
